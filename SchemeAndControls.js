@@ -160,7 +160,7 @@ const SchemeAndControls = function (props){
 	useEffect(() => fillShopMap(), [props.schemeMap])
 
 
-	{/*Реакт парится за корректное отображение НЕКАПСОМ 2,5 тегов - потому присвоение динамических пропов в строку или template literals в будущем компоненте перегоняется в lowercase, вследствие чего он отрисовывается как HTML-строка. Пока работает только так*/}
+	{/*Присвоение динамических пропов в строку или template literals в будущем компоненте перегоняется в lowercase, вследствие чего он отрисовывается как HTML-строка. Пока работает только так*/}
 	const components = {
 		default: SchemePavilion1Floor1,
 		'1_1': SchemePavilion1Floor1,
@@ -393,5 +393,3 @@ const SchemeAndControls = function (props){
 };
 
 export default SchemeAndControls;
-
-{/* Send help */}
